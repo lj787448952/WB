@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "index_header_footer.scss"
+    ],
+    "names": [],
+    "file": "index_header_footer.css"
+}

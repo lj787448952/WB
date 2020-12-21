@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/*-------------用專業的心，做專業的事-------------*/
+.container-items {
+  width: 1920px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bgc {
+  background-color: #AA06010D;
+}
+
+.items {
+  width: 1200px;
+  margin: 0 auto;
+  color: #650300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.items h2 {
+  font-size: 48px;
+  padding: 0 0 60px 0;
+  padding-top: 64px;
+  font-weight: 900;
+}
+.items ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding-left: 0;
+}
+.items ul li {
+  padding-right: 76px;
+  padding-bottom: 80px;
+}
+.items ul .img {
+  height: 100px;
+}
+.items ul .text {
+  width: 208px;
+}
+.items ul h3 {
+  font-size: 24px;
+}
+.items ul p {
+  text-align: left;
+  font-weight: bold;
+}
+.items ul .galss {
+  padding-right: 0px;
+}
+
+/*--------------經典系列鏡框--------------*/
+.glassesType h2 {
+  font-size: 48px;
+  padding: 0 0 60px 0;
+  padding-top: 64px;
+  font-weight: 700;
+  text-align: center;
+  color: #650300;
+}
+
+.classicGlass {
+  width: 1200px;
+  margin: 0 auto;
+  color: #650300;
+}
+
+.item {
+  display: flex;
+  padding-bottom: 32px;
+}
+
+.item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 36px;
+  color: #AA0601;
+  font-weight: bold;
+  font-style: italic;
+}
+.item-img img {
+  width: 48px;
+  height: 38px;
+}
+.item-img h3 {
+  padding-left: 8px;
+  margin: 0;
+}
+.item-img a {
+  text-decoration: none;
+  color: #AA0601;
+}
+
+.sunGlass .item-img {
+  margin: 0 auto;
+}
+
+.functional {
+  padding-bottom: 80px;
+}
+
+/*------聯名設計鏡框------*/
+.glassesFrames {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url("../img/bg.png") no-repeat center/cover;
+  width: 1920px;
+  height: 743px;
+}
+.glassesFrames h3 {
+  font-size: 48px;
+  color: #FFFFFF;
+}
+.glassesFrames .item-glassesFrames {
+  display: flex;
+  font-size: 3rem;
+  color: #AA0601;
+}
+.glassesFrames .item-glassesFrames h2 {
+  z-index: 1;
+}
+.glassesFrames .item-glassesFrames .double {
+  background: url("../img/product-8.png") no-repeat center/cover;
+  width: 580px;
+  height: 512px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.glassesFrames .item-glassesFrames .double h2:hover {
+  animation-name: scaleDraw;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+.glassesFrames .item-glassesFrames .youth {
+  background: url("../img/product-9.png") no-repeat center/cover;
+  width: 580px;
+  height: 512px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-bottom: 80px;
+  position: relative;
+}
+.glassesFrames .item-glassesFrames .youth h2:hover {
+  animation-name: scaleDraw;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+.glassesFrames .item-glassesFrames .bg-white {
+  background-color: #FFFFFF;
+  opacity: 0.5;
+  width: 580px;
+  height: 512px;
+  position: absolute;
+}
+
+/*------顧客推薦------*/
+.customer {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.customer h2 {
+  font-size: 48px;
+  color: #650300;
+  font-weight: 700;
+}
+.customer .c-items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 64px;
+}
+.customer .c-item {
+  margin-right: 30px;
+}
+.customer .c-item img {
+  margin-bottom: -5px;
+}
+.customer .c-item .c-text {
+  padding: 16px;
+  border: solid 1px #DEE2E6;
+  border-top: none;
+}
+.customer .c-item .c-text > p {
+  margin-top: 0px;
+}
+.customer .c-item .c-text p:nth-child(3) {
+  color: #707070;
+}
+.customer .c-item:nth-child(4) {
+  margin-right: 0px;
+}
+
+/*------聯繫我們------*/
+.contactUs-bg {
+  background-color: #AA06010D;
+}
+.contactUs-bg .contactUs {
+  width: 730px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 900;
+}
+.contactUs-bg .contactUs h2 {
+  padding-top: 64px;
+  margin-bottom: 24px;
+  font-size: 48px;
+}
+.contactUs-bg .contactUs form {
+  display: flex;
+  flex-direction: column;
+}
+.contactUs-bg .contactUs form legend {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.contactUs-bg .contactUs form input {
+  margin-bottom: 16px;
+}
+.contactUs-bg .contactUs form input[value] {
+  color: #DEE2E6;
+  padding: 14px 0 14px 16px;
+}
+.contactUs-bg .contactUs form .check {
+  display: flex;
+  margin-bottom: 42px;
+}
+.contactUs-bg .contactUs .btn {
+  margin-bottom: 80px;
+}
+.contactUs-bg .contactUs .btn a {
+  background-color: #AA0601;
+  padding: 16px 143px;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*-------我是動畫---------*/
+@keyframes scaleDraw {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}

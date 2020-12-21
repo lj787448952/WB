@@ -1,0 +1,35 @@
+// 顏色
+$white: #FFFFFF;
+$Ivory: #FBF2F2;
+$redWine: #650300;
+$black: #111619;
+$grey: #DEE2E6;
+$darkGrey: #707070;
+$lightGrey: #DEE2E6;
+$red: #AA0601;
+$brown: #5F3E2D;
+$light-brown: #B75929;
+
+.sun{
+    ul{
+        li:nth-of-type(1){
+            border: none;
+        }
+        li:nth-of-type(2){
+            border-bottom: 14px solid $red;
+        }
+    }
+}
+
+
+.sunGlass{
+    ul{
+        margin-bottom: 304px;
+        li{
+            img{
+                width: 375px;
+                height: 224px;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.banner-location {
+    background: url(../img/banner-3.png)no-repeat center/cover;
+    width: 1920px;
+    height: 304px;
+
+    .place {
+        display: flex;
+        padding-top: 220px;
+        width: 1200px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 64px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        img {
+            height: 58px;
+            margin-left: 8px;
+            padding-top: 15px;
+        }
+    }
+}
+
+.content-location {
+    width: 1200px;
+    margin: 0 auto;
+
+    form {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        font-size: 24px;
+        color: black;
+        font-weight: 900;
+
+    }
+
+    select {
+        padding: 10px;
+        margin-left: 20px;
+        width: 324px;
+    }
+
+}
+
+
+.container-location {
+    ul {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 304px;
+        margin-top: 0;
+        .img-location {
+            h4 {
+                padding: 12px 0 12px 24px;
+                margin: 0;
+                font-size: 24px;
+                font-weight: 900;
+            }
+            border-bottom: 1px solid #00000020;
+            
+        }
+        .img-location img {
+            width: 350px;
+            height: 224px;
+        }
+        li {
+            border: 1px solid #00000020;
+            margin-bottom: 32px;
+            margin-right: 30px;
+            .detail {
+                display: flex;
+                padding: 10px;
+                div{
+                    display: flex;                
+                }
+
+                img {
+                    width: 21px;
+                    height: 21px;
+                    padding-left: 15px;
+                }
+
+                p {
+                    margin: 0;
+                    margin-left: 12px;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    a{
+        border: 1px black solid;
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        list-style: none;
+        color: white;
+        padding: 10px 0;
+    }
+}
+
+
+/*我是layout_location_map.css*/
+.map{
+    display: flex;
+}

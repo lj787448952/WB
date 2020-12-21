@@ -1,0 +1,211 @@
+// 顏色
+$white: #FFFFFF;
+$Ivory: #FBF2F2;
+$redWine: #650300;
+$black: #111619;
+$grey: #DEE2E6;
+$darkGrey: #707070;
+$lightGrey: #DEE2E6;
+$red: #AA0601;
+
+/* -----------------------我是分隔線-------------------------- */
+
+body{
+    width: 1920px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', 'Roboto', sans-serif;
+}
+
+/*我是navbar*/
+.navbar{
+    background-color: $red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1{
+    padding-left: 88px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+.navbar h1 a{
+    width: 100px;
+    height: 100px;
+    background: url(../img/logo-new_工作區域1.png) no-repeat center/cover;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-size: contain;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: $white;
+    font-size: 20px;
+}
+.navbar li{
+    margin-right: 64px;
+    position: relative;
+    transform: translateY(0);
+    transition: .3s;
+}
+.navbar li:hover{
+    transform: translateY(-5px);
+}
+.navbar li::after{
+    content: '';
+    position: absolute;
+    border-bottom: solid 1px $white;
+    left: 100%;
+    right: 100%;
+    bottom: -5px;
+    height: 0;
+    transition: .3s;
+}
+.navbar li:hover:after{
+    left: 0;
+    right: 0;
+}
+
+/* -----------------------我是分隔線-------------------------- */
+
+/*我是banner*/
+
+.banner{
+    background:url(../img/banner.png) no-repeat center/cover;
+    width: 1920px;
+    height: 840px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $redWine;
+}
+.banner div{
+    animation-name: move;
+    animation-iteration-count: 5;
+    position: relative;
+    animation-duration: 2s;
+}
+.banner h2{
+    text-align: right;
+    font-size: 64px;
+    padding-left: 580px;
+    font-weight: bold;
+}
+.banner span{
+    font-size: 36px;
+}
+
+/*------footer------*/
+.footer-bg{
+    background-color: $red;
+}
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+    .item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            font-size: 20px;
+            li a{
+                text-decoration: none;
+                color: $white;
+            }
+            li{
+                margin: 48px 48px 36px 0;
+            }
+        }
+        .icon a{
+            margin-left: 32px;
+        }
+    }
+    .call,.mail{
+        display: flex;
+        align-items: center;
+        font-size: 36px;
+        color: $white;
+        
+        h4{
+            margin: 0;
+        }
+    }
+    .call{
+        margin-bottom: 19px;
+        h4{
+            padding-left: 17px;
+        }
+    }
+    .mail{
+        border-bottom: solid 1px $white;
+        padding-bottom: 20px;
+        margin-bottom: 24px;
+        h4{
+            padding-left: 12px;
+        }
+    }
+    .item-ft{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 0;
+        .logo-icon{
+            display: flex;
+            color: $white;
+            p{
+                margin-left: 38px;
+                margin-bottom: 40px;
+            }
+        }
+        .contact-menu{
+            display: flex;
+        }
+        .contact-menu p{
+            color: $white;
+            padding-left: 62px;
+        }
+    }
+}
+
+.footer li{
+    margin-right: 64px;
+    position: relative;
+    transform: translateY(0);
+    transition: .3s;
+}
+.footer li:hover{
+    transform: translateY(-5px);
+}
+.footer li::after{
+    content: '';
+    position: absolute;
+    border-bottom: solid 1px $white;
+    left: 100%;
+    right: 100%;
+    bottom: -5px;
+    height: 0;
+    transition: .3s;
+}
+.footer li:hover:after{
+    left: 0;
+    right: 0;
+}
+
+/*------------我是動畫------------*/
+@keyframes move{
+    0%{ left:0; top:0;}
+    50%{ left:0; top:-100px; opacity: .5;}
+    100%{left: 0; top: 0px;}
+}

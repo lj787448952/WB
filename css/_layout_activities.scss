@@ -1,0 +1,101 @@
+// 顏色
+$white: #FFFFFF;
+$Ivory: #FBF2F2;
+$redWine: #650300;
+$black: #111619;
+$grey: #DEE2E6;
+$darkGrey: #707070;
+$lightGrey: #DEE2E6;
+$red: #AA0601;
+$pink: #AA06010D;
+
+.bg-search{
+    background-color: $redWine;
+    margin-bottom: 82px;
+}
+.searchBar{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    ul{
+        padding-left: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        li{
+            padding: 10px 0;
+            padding-right: 48px;
+        }
+        li a{
+            list-style: none;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    .icon-search{
+        padding: 10px 0;
+    }
+}
+.content-activities{
+    width: 1200px;
+    margin: 0 auto;
+    p{
+        margin: 0;
+    }
+    h3{
+        margin: 0;
+    }
+}
+.activities-items{
+    display: flex;
+    margin-bottom: 60px;
+    
+    h3{
+        font-size: 32px;
+        color: $redWine;
+    }
+    .activities-img-blog1,.activities-img-blog2,.activities-img-blog3,.activities-img-blog4,.activities-img-blog5{
+        background-image: url(../img/blog-1.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 635px;
+        height: 400px;
+    }
+    .activities-img-blog2{
+        background-image: url(../img/blog-2.png);
+    }
+    .activities-img-blog3{
+        background-image: url(../img/blog-3.png);
+    }
+    .activities-img-blog4{
+        background-image: url(../img/blog-4.png);
+    }
+    .activities-img-blog5{
+        background-image: url(../img/blog-5.png);
+    }
+    .item-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        p:nth-of-type(1){
+            font-size: 20px;
+        }
+    }
+    .activities-item{
+        width: 500px;
+        margin-left: 30px;
+        .span{
+            font-size: 48px;
+            color: $redWine;
+            display: flex;
+            justify-content:flex-end;
+        }
+        .act-p{
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+    }
+}
