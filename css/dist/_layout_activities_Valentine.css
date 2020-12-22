@@ -1,0 +1,98 @@
+.Valentine-bg {
+  margin-bottom: 0;
+}
+
+.content-Valentine {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.Valentine-news {
+  width: 825px;
+}
+.Valentine-news h2 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+}
+.Valentine-news span {
+  color: #AA0601;
+}
+.Valentine-news .Valentine-news-tag {
+  font-size: 24px;
+  color: #AA0601;
+}
+.Valentine-news .Valentine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 23px;
+}
+.Valentine-news .Valentine p {
+  margin: 0;
+}
+.Valentine-news .Valentine span {
+  color: #707070;
+  font-size: 16px;
+}
+.Valentine-news .Valentine-share {
+  display: flex;
+  padding: 16px 0;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 24px;
+}
+.Valentine-news .Valentine-share h4 {
+  margin: 0;
+  margin-right: 20px;
+}
+.Valentine-news .Valentine-share img:nth-of-type(1) {
+  margin-right: 16px;
+}
+.Valentine-news .Valentine-pages {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 304px;
+}
+.Valentine-news .Valentine-pages .pages-back {
+  display: flex;
+}
+.Valentine-news .Valentine-pages .pages-back p {
+  margin: 0;
+  font-size: 20px;
+}
+.Valentine-news .Valentine-pages .pages-back a {
+  text-decoration: none;
+  color: black;
+}
+.Valentine-news .Valentine-pages .pages-next {
+  display: flex;
+}
+.Valentine-news .Valentine-pages .pages-next p {
+  margin: 0;
+  font-size: 20px;
+}
+.Valentine-news .Valentine-pages .pages-next a {
+  text-decoration: none;
+  color: black;
+}
+
+.Valentine-tag {
+  margin-top: 78px;
+}
+.Valentine-tag ul {
+  list-style: none;
+  color: #AA0601;
+}
+.Valentine-tag ul p {
+  font-size: 24px;
+}
+.Valentine-tag .d-flex {
+  display: flex;
+  align-items: center;
+}
+.Valentine-tag .d-flex h4 {
+  margin: 0;
+  font-size: 28px;
+}

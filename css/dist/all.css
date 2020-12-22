@@ -369,6 +369,11 @@ img {
 }
 .item-img h3 {
   padding-left: 8px;
+  margin: 0;
+}
+.item-img a {
+  text-decoration: none;
+  color: #AA0601;
 }
 
 .sunGlass .item-img {
@@ -811,4 +816,97 @@ img {
 }
 .content-questions p {
   padding: 0 95px;
+}
+
+.bg-search {
+  background-color: #650300;
+  margin-bottom: 82px;
+}
+
+.searchBar {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.searchBar ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.searchBar ul li {
+  padding: 10px 0;
+  padding-right: 48px;
+}
+.searchBar ul li a {
+  list-style: none;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.searchBar .icon-search {
+  padding: 10px 0;
+}
+
+.content-activities {
+  width: 1200px;
+  margin: 0 auto;
+}
+.content-activities p {
+  margin: 0;
+}
+.content-activities h3 {
+  margin: 0;
+}
+
+.activities-items {
+  display: flex;
+  margin-bottom: 60px;
+}
+.activities-items h3 {
+  font-size: 32px;
+  color: #650300;
+}
+.activities-items .activities-img-blog1, .activities-items .activities-img-blog2, .activities-items .activities-img-blog3, .activities-items .activities-img-blog4, .activities-items .activities-img-blog5 {
+  background-image: url(../img/blog-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 635px;
+  height: 400px;
+}
+.activities-items .activities-img-blog2 {
+  background-image: url(../img/blog-2.png);
+}
+.activities-items .activities-img-blog3 {
+  background-image: url(../img/blog-3.png);
+}
+.activities-items .activities-img-blog4 {
+  background-image: url(../img/blog-4.png);
+}
+.activities-items .activities-img-blog5 {
+  background-image: url(../img/blog-5.png);
+}
+.activities-items .item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.activities-items .item-title p:nth-of-type(1) {
+  font-size: 20px;
+}
+.activities-items .activities-item {
+  width: 500px;
+  margin-left: 30px;
+}
+.activities-items .activities-item .span {
+  font-size: 48px;
+  color: #650300;
+  display: flex;
+  justify-content: flex-end;
+}
+.activities-items .activities-item .act-p {
+  margin-bottom: 50px;
+  font-size: 20px;
 }
