@@ -10,8 +10,7 @@ $red: #AA0601;
 
 /* -----------------------我是分隔線-------------------------- */
 
-body{
-    width: 1920px;
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -19,19 +18,20 @@ body{
 }
 
 /*我是navbar*/
-.navbar{
+.navbar {
     background-color: $red;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar h1{
+.navbar h1 {
     padding-left: 88px;
     margin-top: 30px;
     margin-bottom: 30px;
-  }
-.navbar h1 a{
+}
+
+.navbar h1 a {
     width: 100px;
     height: 100px;
     background: url(../img/logo-new_工作區域1.png) no-repeat center/cover;
@@ -41,25 +41,30 @@ body{
     white-space: nowrap;
     background-size: contain;
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
     list-style: none;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
     color: $white;
     font-size: 20px;
 }
-.navbar li{
+
+.navbar li {
     margin-right: 64px;
     position: relative;
     transform: translateY(0);
     transition: .3s;
 }
-.navbar li:hover{
+
+.navbar li:hover {
     transform: translateY(-5px);
 }
-.navbar li::after{
+
+.navbar li::after {
     content: '';
     position: absolute;
     border-bottom: solid 1px $white;
@@ -69,7 +74,8 @@ body{
     height: 0;
     transition: .3s;
 }
-.navbar li:hover:after{
+
+.navbar li:hover:after {
     left: 0;
     right: 0;
 }
@@ -78,117 +84,139 @@ body{
 
 /*我是banner*/
 
-.banner{
-    background:url(../img/banner.png) no-repeat center/cover;
-    width: 1920px;
+.banner {
+    background: url(../img/banner.png) no-repeat center/cover;
+    width: 100%;
     height: 840px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     color: $redWine;
 }
-.banner div{
+
+.banner div {
     animation-name: move;
     animation-iteration-count: 5;
     position: relative;
     animation-duration: 2s;
 }
-.banner h2{
+
+.banner h2 {
+    margin-right: 150px;
     text-align: right;
     font-size: 64px;
-    padding-left: 580px;
     font-weight: bold;
 }
-.banner span{
+
+.banner span {
     font-size: 36px;
 }
 
 /*------footer------*/
-.footer-bg{
+.footer-bg {
     background-color: $red;
 }
-.footer{
+
+.footer {
     width: 1200px;
     margin: 0 auto;
-    .item{
+
+    .item {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        ul{
+
+        ul {
             display: flex;
             list-style: none;
             padding-left: 0;
             margin: 0;
             font-size: 20px;
-            li a{
+
+            li a {
                 text-decoration: none;
                 color: $white;
             }
-            li{
+
+            li {
                 margin: 48px 48px 36px 0;
             }
         }
-        .icon a{
+
+        .icon a {
             margin-left: 32px;
         }
     }
-    .call,.mail{
+
+    .call,
+    .mail {
         display: flex;
         align-items: center;
         font-size: 36px;
         color: $white;
-        
-        h4{
+
+        h4 {
             margin: 0;
         }
     }
-    .call{
+
+    .call {
         margin-bottom: 19px;
-        h4{
+
+        h4 {
             padding-left: 17px;
         }
     }
-    .mail{
+
+    .mail {
         border-bottom: solid 1px $white;
         padding-bottom: 20px;
         margin-bottom: 24px;
-        h4{
+
+        h4 {
             padding-left: 12px;
         }
     }
-    .item-ft{
+
+    .item-ft {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-bottom: 0;
-        .logo-icon{
+
+        .logo-icon {
             display: flex;
             color: $white;
-            p{
+
+            p {
                 margin-left: 38px;
                 margin-bottom: 40px;
             }
         }
-        .contact-menu{
+
+        .contact-menu {
             display: flex;
         }
-        .contact-menu p{
+
+        .contact-menu p {
             color: $white;
             padding-left: 62px;
         }
     }
 }
 
-.footer li{
+.footer li {
     margin-right: 64px;
     position: relative;
     transform: translateY(0);
     transition: .3s;
 }
-.footer li:hover{
+
+.footer li:hover {
     transform: translateY(-5px);
 }
-.footer li::after{
+
+.footer li::after {
     content: '';
     position: absolute;
     border-bottom: solid 1px $white;
@@ -198,14 +226,123 @@ body{
     height: 0;
     transition: .3s;
 }
-.footer li:hover:after{
+
+.footer li:hover:after {
     left: 0;
     right: 0;
 }
 
 /*------------我是動畫------------*/
-@keyframes move{
-    0%{ left:0; top:0;}
-    50%{ left:0; top:-100px; opacity: .5;}
-    100%{left: 0; top: 0px;}
+@keyframes move {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    50% {
+        left: 0;
+        top: -100px;
+        opacity: .5;
+    }
+
+    100% {
+        left: 0;
+        top: 0px;
+    }
+}
+
+
+/*--------------@media---------------*/
+
+@media (max-width: 1200px) {
+
+    /* 我是banner */
+    .navbar {
+        width: 100%;
+
+        ul li a {
+            font-size: 18px;
+        }
+    }
+
+    .banner {
+        h2 {
+            margin-right: 0;
+        }
+    }
+
+    /* 我是用專業的心，做專業的事*/
+    .items ul {
+        .text {
+            max-width: 208px;
+        }
+    }
+
+    /*聯名設計鏡框*/
+    .bg.white{
+        width: 100%;
+    }
+    .double{
+        width: 100%;
+    }
+    .youth{
+        width: 100%;
+    }
+
+    /*顧客推薦*/
+    .customer{
+        max-width: 100%;
+        .c-items{
+            flex-wrap: wrap;
+        }
+    }
+    /*footer*/
+    .footer{
+        width: 100%;
+    }
+}
+@media (max-width: 958px) and (min-width:630px){
+    /* 我是用專業的心，做專業的事
+    .items{
+        ul{
+            li{
+                max-width: 50%;
+            }
+        }
+    }*/
+    /* 我是經典系列鏡框*/
+    .item{
+        justify-content: center;
+    }
+    .sunGlass {
+        .item-img {
+            margin: 0;
+            order: 1;
+        }
+    }
+    /* 聯名設計鏡框 */
+    .item-glassesFrames{
+        width: 100%;
+    }
+
+    /*顧客推薦*/
+    .customer{
+        ul{
+            li:nth-of-type(1){
+                margin-bottom: 10px;
+            }
+            li:nth-of-type(2){
+                margin-bottom: 10px;
+            }
+        }
+        .c-items{
+            flex-wrap: wrap;
+            margin-right: 0;
+        }
+    }
+    .contactUs{
+        width: 100%;
+    }
+    
+    
 }

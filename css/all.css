@@ -2,7 +2,6 @@
 @import url(c:\Users\user\Desktop\網頁作品\WB\css\reset.css);
 /* -----------------------我是分隔線-------------------------- */
 body {
-  width: 1920px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -89,14 +88,14 @@ body {
 /*我是banner*/
 .banner {
   background: url(../img/banner.png) no-repeat center/cover;
-  width: 1920px;
+  width: 100%;
   height: 840px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -114,9 +113,9 @@ body {
 }
 
 .banner h2 {
+  margin-right: 150px;
   text-align: right;
   font-size: 64px;
-  padding-left: 580px;
   font-weight: bold;
 }
 
@@ -169,7 +168,8 @@ body {
   margin-left: 32px;
 }
 
-.footer .call, .footer .mail {
+.footer .call,
+.footer .mail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +180,8 @@ body {
   color: #FFFFFF;
 }
 
-.footer .call h4, .footer .mail h4 {
+.footer .call h4,
+.footer .mail h4 {
   margin: 0;
 }
 
@@ -301,11 +302,89 @@ body {
   }
 }
 
-/*-------------用專業的心，做專業的事-------------*/
-.container-items {
-  width: 1920px;
+/*--------------@media---------------*/
+@media (max-width: 1200px) {
+  /* 我是banner */
+  .navbar {
+    width: 100%;
+  }
+  .navbar ul li a {
+    font-size: 18px;
+  }
+  .banner h2 {
+    margin-right: 0;
+  }
+  /* 我是用專業的心，做專業的事*/
+  .items ul .text {
+    max-width: 208px;
+  }
+  /*聯名設計鏡框*/
+  .bg.white {
+    width: 100%;
+  }
+  .double {
+    width: 100%;
+  }
+  .youth {
+    width: 100%;
+  }
+  /*顧客推薦*/
+  .customer {
+    max-width: 100%;
+  }
+  .customer .c-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /*footer*/
+  .footer {
+    width: 100%;
+  }
 }
 
+@media (max-width: 958px) and (min-width: 630px) {
+  /* 我是用專業的心，做專業的事
+    .items{
+        ul{
+            li{
+                max-width: 50%;
+            }
+        }
+    }*/
+  /* 我是經典系列鏡框*/
+  .item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sunGlass .item-img {
+    margin: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* 聯名設計鏡框 */
+  .item-glassesFrames {
+    width: 100%;
+  }
+  /*顧客推薦*/
+  .customer ul li:nth-of-type(1) {
+    margin-bottom: 10px;
+  }
+  .customer ul li:nth-of-type(2) {
+    margin-bottom: 10px;
+  }
+  .customer .c-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: 0;
+  }
+  .contactUs {
+    width: 100%;
+  }
+}
+
+/*-------------用專業的心，做專業的事-------------*/
 img {
   max-width: 100%;
 }
@@ -315,8 +394,6 @@ img {
 }
 
 .items {
-  width: 1200px;
-  margin: 0 auto;
   color: #650300;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,6 +408,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .items h2 {
@@ -344,6 +423,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   text-align: center;
   margin: 0;
@@ -351,16 +434,11 @@ img {
 }
 
 .items ul li {
-  padding-right: 76px;
-  padding-bottom: 80px;
+  max-width: 208px;
 }
 
 .items ul .img {
   height: 100px;
-}
-
-.items ul .text {
-  width: 208px;
 }
 
 .items ul h3 {
@@ -368,6 +446,7 @@ img {
 }
 
 .items ul p {
+  padding: 0 10px;
   text-align: left;
   font-weight: bold;
 }
@@ -387,7 +466,7 @@ img {
 }
 
 .classicGlass {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   color: #650300;
 }
@@ -396,6 +475,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 32px;
 }
 
@@ -431,6 +512,16 @@ img {
   color: #AA0601;
 }
 
+.sunGlass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .sunGlass .item-img {
   margin: 0 auto;
 }
@@ -452,7 +543,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   background: url("../img/bg.png") no-repeat center/cover;
-  width: 1920px;
+  width: 100%;
   height: 743px;
 }
 
@@ -471,11 +562,12 @@ img {
 
 .glassesFrames .item-glassesFrames h2 {
   z-index: 1;
+  margin: 0;
 }
 
 .glassesFrames .item-glassesFrames .double {
   background: url("../img/product-8.png") no-repeat center/cover;
-  width: 580px;
+  width: 540px;
   height: 512px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,7 +594,7 @@ img {
 
 .glassesFrames .item-glassesFrames .youth {
   background: url("../img/product-9.png") no-repeat center/cover;
-  width: 580px;
+  width: 540px;
   height: 512px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,7 +606,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 30px;
-  margin-bottom: 80px;
   position: relative;
 }
 
@@ -532,7 +623,7 @@ img {
 .glassesFrames .item-glassesFrames .bg-white {
   background-color: #FFFFFF;
   opacity: .5;
-  width: 580px;
+  width: 100%;
   height: 512px;
   position: absolute;
 }
@@ -566,9 +657,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   list-style: none;
   padding-left: 0;
   margin-bottom: 64px;
@@ -576,6 +666,7 @@ img {
 
 .customer .c-item {
   margin-right: 30px;
+  width: 330px;
 }
 
 .customer .c-item img {
@@ -594,10 +685,6 @@ img {
 
 .customer .c-item .c-text p:nth-child(3) {
   color: #707070;
-}
-
-.customer .c-item:nth-child(4) {
-  margin-right: 0px;
 }
 
 /*------聯繫我們------*/
@@ -666,8 +753,10 @@ img {
 }
 
 .contactUs-bg .contactUs .btn a {
+  margin: 0 auto;
+  display: block;
   background-color: #AA0601;
-  padding: 16px 143px;
+  padding: 16px 0;
   text-decoration: none;
   color: #FFFFFF;
   text-align: center;
@@ -711,6 +800,7 @@ img {
   }
 }
 
+/*-----------@media-----------*/
 .banner-sm ul {
   list-style: none;
   display: -webkit-box;

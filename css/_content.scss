@@ -11,9 +11,6 @@ $pink: #AA06010D;
 
 /*-------------用專業的心，做專業的事-------------*/
 
-.container-items {
-    width: 1920px;
-}
 
 img {
     max-width: 100%;
@@ -24,13 +21,13 @@ img {
 }
 
 .items {
-    width: 1200px;
-    margin: 0 auto;
     color: $redWine;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
 
     h2 {
         font-size: 48px;
@@ -41,22 +38,19 @@ img {
 
     ul {
         display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
         list-style: none;
         text-align: center;
         margin: 0;
         padding-left: 0;
 
-        li {
-            padding-right: 76px;
-            padding-bottom: 80px;
+        li{
+            max-width: 208px;
         }
 
         .img {
             height: 100px;
-        }
-
-        .text {
-            width: 208px;
         }
 
         h3 {
@@ -64,7 +58,7 @@ img {
         }
 
         p {
-
+            padding: 0 10px;
             text-align: left;
             font-weight: bold;
         }
@@ -88,7 +82,7 @@ img {
 }
 
 .classicGlass {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     color: $redWine;
 
@@ -96,6 +90,7 @@ img {
 
 .item {
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 32px;
 }
 
@@ -125,9 +120,10 @@ img {
 }
 
 .sunGlass {
+    display: flex;
+    flex-direction: row-reverse;
     .item-img {
         margin: 0 auto;
-
     }
 }
 
@@ -141,9 +137,8 @@ img {
     align-items: center;
     flex-direction: column;
     background: url("../img/bg.png")no-repeat center/cover;
-    width: 1920px;
+    width: 100%;
     height: 743px;
-
     h3 {
         font-size: 48px;
         color: $white;
@@ -156,11 +151,12 @@ img {
 
         h2 {
             z-index: 1;
+            margin: 0;
         }
 
         .double {
             background: url("../img/product-8.png")no-repeat center/cover;
-            width: 580px;
+            width: 540px;
             height: 512px;
             display: flex;
             justify-content: center;
@@ -177,13 +173,13 @@ img {
 
         .youth {
             background: url("../img/product-9.png")no-repeat center/cover;
-            width: 580px;
+            width: 540px;
             height: 512px;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: 30px;
-            margin-bottom: 80px;
+            
             position: relative;
 
 
@@ -198,7 +194,7 @@ img {
         .bg-white {
             background-color: $white;
             opacity: .5;
-            width: 580px;
+            width: 100%;
             height: 512px;
             position: absolute;
         }
@@ -222,7 +218,7 @@ img {
 
     .c-items {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         list-style: none;
         padding-left: 0;
         margin-bottom: 64px;
@@ -230,6 +226,7 @@ img {
 
     .c-item {
         margin-right: 30px;
+        width: 330px;
 
         img {
             margin-bottom: -5px;
@@ -248,10 +245,6 @@ img {
                 color: $darkGrey;
             }
         }
-    }
-
-    .c-item:nth-child(4) {
-        margin-right: 0px;
     }
 }
 
@@ -303,8 +296,10 @@ img {
         }
 
         .btn a {
+            margin: 0 auto;
+            display: block;
             background-color: $red;
-            padding: 16px 143px;
+            padding: 16px 0;
             text-decoration: none;
             color: $white;
             text-align: center;
@@ -330,3 +325,5 @@ img {
         transform: scale(1.1);
     }
 }
+
+/*-----------@media-----------*/
